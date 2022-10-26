@@ -31,3 +31,4 @@ jobs:
       working-directory: ./python-example-app
     - name: Deploy Pypi
       run: python -m twine upload dist/* --skip-existing -u ${{ secrets.PYPI_CREDENTIALS_USER }} -p ${{ secrets.PYPI_CREDENTIALS_PASSWORD }}
+      working-directory: ./python-example-app
